@@ -1,0 +1,25 @@
+﻿<Window x:Class="Ekzamen0202Ryp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ekzamen0202Ryp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Minute" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="MinutesTextBox" HorizontalAlignment="Left" Margin="10,41,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="201"/>
+        <Label Content="tariff" HorizontalAlignment="Left" Margin="10,64,0,0" VerticalAlignment="Top"/>
+        <ComboBox  x:Name="TariffComboBox" HorizontalAlignment="Left" Margin="10,95,0,0" VerticalAlignment="Top" Width="201">
+            <ComboBoxItem Content="Tarif one"/>
+            <ComboBoxItem Content="Tarif two"/>
+        </ComboBox>
+        <Button x:Name="CalculateButton" Content="Рассчет" HorizontalAlignment="Left" Margin="10,122,0,0" VerticalAlignment="Top" Height="24" Width="96" Click="Button_Click"/>
+        <Button x:Name="GenerateReceiptButton" Content="Квитанция" HorizontalAlignment="Left" Margin="111,122,0,0" VerticalAlignment="Top" Height="24" Width="100" Click="GenerateReceiptButton_Click"/>
+        <Label Content="Сумма к оплате" HorizontalAlignment="Left" Margin="10,164,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="TotalLabel" Content="0 руб" HorizontalAlignment="Left" Margin="111,164,0,0" VerticalAlignment="Top"/>
+        <Label Content="Минуты сверх нормы" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SverhNormLabel" Content="0 минут" HorizontalAlignment="Left" Margin="161,191,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
